@@ -27,6 +27,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           controller: 'EnterController'
       })
 
+   .state('menu', {
+         url: '/menu',
+         templateUrl: 'views/menu.html',
+          controller: 'MenuController'
+      })
+
     .state('page', {
       url: '/page1',
       views: {
