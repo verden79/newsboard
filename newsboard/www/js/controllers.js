@@ -1,11 +1,21 @@
 angular.module('starter.controllers', [])
 
 
-.controller("EnterController", function ($scope) {
+.controller("EnterController", function ($scope, $ionicModal) {
+    $ionicModal.fromTemplateUrl('views/menu.html', { scope: $scope })
+    .then(function(modal) 
+    {
+        $scope.modal = modal;
+    });
+
+    $scope.inmenu = function() {
+    $scope.modal.show();
+    };
+
 })
 
 
-.controller("MyController" ,function($scope){
+.controller("MenuController" ,function($scope){
   $scope.menus = [
     {title: "Книга рецептов"},
     {title: "Журнал"},
