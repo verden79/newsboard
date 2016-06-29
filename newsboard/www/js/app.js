@@ -42,6 +42,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('news', {
+        url: '/news',
+        views: {
+            'tab-dash': {
+                templateUrl: 'views/news.html',
+                controller: 'PageController'
+            }
+        }
+    })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/');
