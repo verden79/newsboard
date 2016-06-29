@@ -2,7 +2,7 @@ body {
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     -webkit-user-select: none;
-    background-color:#32383d;
+    background-color: dodgerblue;
     font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
     font-size:12px;
 }
@@ -33,9 +33,40 @@ body {
 }
 
 .ready {
-    background-color: #4B946A;
+    background-color: dodgerblue;
 }
 
+#logo{
+    margin-top: 30%;
+    height: 6em;
+}
+#pg-login{
+    height: 100%;
+    background-color: dodgerblue;
+}
+#pg-login label.item{
+    margin-bottom: 1em;
+}
+#hd-login{
+    color: #ffffff;
+}
+#bt-login{
+    width:100%;
+    margin-bottom: 1em;
+}
+label.link a{
+    color: #ffffff;
+    font-style:italic;
+}
+#dv-bt-def{
+    width: 100%;
+    margin-top:30%;
+}
+#dv-bt-def button{
+    width:100%;
+    color: #ffffff;
+    background-color:mediumblue;
+}
 @keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }

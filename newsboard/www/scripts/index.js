@@ -13,9 +13,7 @@
         document.addEventListener( 'resume', onResume.bind( this ), false );
         
         // TODO: Платформа Cordova загружена. Выполните здесь инициализацию, которая требуется Cordova.
-        var element = document.getElementById("deviceready");
-        element.innerHTML = 'Device Ready';
-        element.className += ' ready';
+        
     };
 
     function onPause() {
