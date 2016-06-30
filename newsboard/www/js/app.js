@@ -59,10 +59,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 }
             }
     })
-    .state('news', {
+    .state('menu/news', {
         url: '/news',
         views: {
-            'tab-dash': {
+            'menuContent': {
                 templateUrl: 'views/news.html',
                 controller: 'PageController'
             }
