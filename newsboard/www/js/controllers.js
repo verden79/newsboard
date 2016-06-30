@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 
 .controller("EnterController", function ($scope, $ionicModal) {
-    $ionicModal.fromTemplateUrl('views/menu.html', { scope: $scope })
+    $ionicModal.fromTemplateUrl('views/page1.html', { scope: $scope })
     .then(function(modal) 
     {
         $scope.modal = modal;
@@ -13,7 +13,6 @@ angular.module('starter.controllers', [])
     };
 
 })
-
 
 .controller("MenuController" ,function($scope){
   $scope.menus = [
@@ -30,7 +29,13 @@ angular.module('starter.controllers', [])
     {title: "Однокурсники"},
     {title: "Настройки"}
   ];
+  $scope.pers = { name: "Aleksey Pirogov" , balls : 0};
+    
 })
 
 .controller("PageController" ,function($scope){
+})
+
+
+.controller("HeadController", function ($scope) {
 })

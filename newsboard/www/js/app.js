@@ -21,26 +21,43 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     $stateProvider
 
   // setup an abstract state for the tabs directive
+
+   .state('head', {
+        url: '/head',
+        abstract: true,
+        templateUrl: 'views/head.html',
+        controller: 'HeadController'
+      })
    .state('enter', {
-         url: '/',
+         url: '/enter',
          templateUrl: 'views/enter.html',
           controller: 'EnterController'
       })
 
    .state('menu', {
-         url: '/menu',
+       url: '/menu',
+         abstract: true,
          templateUrl: 'views/menu.html',
           controller: 'MenuController'
       })
 
-    .state('page', {
+    .state('menu.page1', {
       url: '/page1',
       views: {
-        'tab-dash': {
+          'menuContent': {
           templateUrl: 'views/page1.html',
           controller: 'PageController'
         }
       }
+    })
+    .state('menu.page2', {
+       url: '/page2',
+       views: {
+          'menuContent': {
+                 templateUrl: 'views/page2.html',
+                  controller: 'PageController'
+                }
+            }
     })
     .state('news', {
         url: '/news',
@@ -53,7 +70,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     })
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/menu');
+    $urlRouterProvider.otherwise('/enter'); // /menu/page1
 
 });
 
