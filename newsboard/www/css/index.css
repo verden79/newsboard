@@ -67,6 +67,9 @@ div.nws-bott div.nws-bott-like{
     margin-top: 30%;
     height: 6em;
 }
+#logo img{
+    width: 150px;
+}
 #pg-login{
     height: 100%;
     background-color: dodgerblue;
