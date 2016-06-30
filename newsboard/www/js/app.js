@@ -59,7 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 }
             }
     })
-    .state('menu/news', {
+    .state('menu.news', {
         url: '/news',
         views: {
             'menuContent': {
