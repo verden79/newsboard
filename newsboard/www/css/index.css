@@ -35,40 +35,75 @@ body {
 .ready {
     background-color: dodgerblue;
 }
-div.news-head{
-    display: inline;
+.padding .scroll-content .ionic-scroll .overflow-scroll  .has-header{
+    
+}
+.newsd{
+    display: block;
+    
+}
+.news-head{
+    display: inline-block;
+    display: -webkit-box;
     width: 100%;
-    height: 0.5em;
+    height: 3em;
     float:left;
 }
-div.news-head i{
-    font-size:unset;
+.news-head-l{
+    width: 12%;
+    height:inherit;
+}
+.news-head-c {
+    width: 81%;
+    height:inherit;
+    padding: 0 4px 0 4px;
+}
+.news-head-r{
+    width:6%;
+    height:inherit;
+    overflow:hidden;
+    float:right;
+}
+.news-head i{
+    height:inherit;
+    font-size: 100%;
+    font-weight:900;
+    overflow:hidden;
 }
 .news-head img{
     float: left;
-    height: 20px;
-    width:20px;
-    border-radius: 10px;
+    /*margin-top: 0.5em;*/
+    height: 3em;
+    width:3em;
+    border-radius: 1.5em;
 }
-.news-head h4{
-    overflow:hidden;
-}
-.nws-bott{
 
+.nws-bott{
+    border-width:thick;
+    border-bottom: 2px solid #808080;
+}
+.nws-bott i{
+    float:right;
+}
+.nws-bott a{
+    text-decoration: none;
 }
 div.nws-bott div.nws-bott-like{
     float:right;
-    height:5px;
-    width:5px;
+    height:10px;
+    width:10px;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
     background-color:dodgerblue;
     border-radius: 50%;
 }
 #logo{
-    margin-top: 30%;
+    margin-top: 3em;
     height: 6em;
 }
 #logo img{
-    width: 150px;
+    width: 6em;
+    height: 6em;
 }
 #pg-login{
     height: 100%;
