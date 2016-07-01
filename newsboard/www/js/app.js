@@ -50,6 +50,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('menu.recipes', {
+        url: '/recipes',
+        views: {
+            'menuContent': {
+                templateUrl: 'views/recipes.html',
+                controller: 'PageController'
+            }
+        }
+    })
     .state('menu.page2', {
        url: '/page2',
        views: {

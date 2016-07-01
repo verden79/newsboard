@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 
 .controller("EnterController", function ($scope, $ionicModal) {
-    $ionicModal.fromTemplateUrl('views/page1.html', { scope: $scope })
+    $ionicModal.fromTemplateUrl('views/recipes.html', { scope: $scope })
     .then(function(modal) 
     {
         $scope.modal = modal;
